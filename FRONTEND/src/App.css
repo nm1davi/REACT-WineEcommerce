@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@1,300&display=swap');
+
+/* Estilos generales */
+body {
+  background-image: url("../public/image/Montaña.jpg");
+  background-position: center;
+  background-size: cover;
+  width: auto !important;
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'Source Sans 3', sans-serif;
+}
+
+/* Estilos para contenedor genérico */
+.contenedor {
+  margin: 1rem; /* Aumentado el margen para separación en pantallas más grandes */
+  background-position: center;
+  background-size: cover;
+  border-radius: 0.5rem;
+  min-height: 35vh;
+}
+
+/* Estilos para elementos con clase ItemCount y span dentro */
+.ItemCount span {
+  color: black;
+  padding: 0.5rem; /* Reducido el padding para evitar demasiado espacio en pantallas pequeñas */
+  font-size: 0.9rem; /* Ajuste del tamaño de fuente para pantallas más pequeñas */
+}
+
+/* Estilos para el contenedor de carrito vacío */
+.ContainerCarritoVacio {
+  display: flex;
+  flex-direction: column; /* Cambiado a columna en pantallas más pequeñas para mejor visualización */
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  min-height: 80vh;
+}
+
+/* Media queries para hacer responsive */
+@media screen and (max-width: 768px) {
+  .contenedor {
+    margin: 0.5rem; /* Reducido el margen en pantallas más pequeñas */
+    min-height: 25vh; /* Reducida la altura mínima para ocupar menos espacio vertical */
+  }
+
+  .ItemCount span {
+    font-size: 0.8rem; /* Ajuste adicional del tamaño de fuente */
+  }
+
+  .ContainerCarritoVacio {
+    min-height: 50vh; /* Ajuste de la altura mínima para pantallas más pequeñas */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .contenedor {
+    margin: 0.2rem; /* Margen aún más reducido en pantallas extra pequeñas */
+    min-height: 20vh; /* Altura mínima más reducida para pantallas muy pequeñas */
+  }
+
+  .ItemCount span {
+    font-size: 0.7rem; /* Reducción adicional del tamaño de fuente */
+  }
+}

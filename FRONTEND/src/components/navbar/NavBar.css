@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+
+/* Estilos para todas las imágenes */
+img {
+  height: 6rem;
+  object-fit: contain;
+}
+
+/* Estilos específicos para la imagen del logo */
+.ImagenLogo {
+  height: 10rem;
+  border-radius: 0.6rem;
+}
+
+/* Estilos para el texto dentro de spans */
+span {
+  padding-left: 0.5rem;
+  color: rgb(255, 255, 255);
+}
+
+/* Estilos para el contenedor del logo */
+.logo {
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Estilos para el nombre del local */
+.nombreLocal a {
+  margin-left: 1rem;
+  font-family: 'EB Garamond', serif;
+  font-size: 3rem;
+  color: rgba(0, 0, 0, 0.685);
+}
+
+/* Estilos para las categorías */
+.categorias a {
+  color: rgba(0, 0, 0, 0.274);
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bold;
+}
+
+/* Estilos para la imagen del carrito */
+.carrito img {
+  height: 2rem;
+}

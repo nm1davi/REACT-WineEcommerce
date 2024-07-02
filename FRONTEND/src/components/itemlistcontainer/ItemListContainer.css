@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+
+.ImgCards {
+  object-fit: contain;
+  height: 13rem;
+}
+
+.Cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 1rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.card {
+  align-items: center;
+  text-align: center;
+  background-color: rgba(31, 28, 28, 0.644) !important;
+  font-family: 'DM Sans', sans-serif;
+  color: rgb(255, 233, 233) !important;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  width: calc(33.33% - 1rem); /* Ajuste para que haya 3 tarjetas por fila con espaciado */
+  margin-bottom: 1rem;
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Efecto de elevación al pasar el mouse */
+}
+
+.TituloCard {
+  font-size: 1rem;
+  margin-top: 0.5rem; /* Espaciado superior para el título */
+}
+
+.tituloContenedor {
+  text-align: center;
+  align-items: center;
+  color: rgb(34, 33, 33);
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bold;
+  margin-bottom: 1rem; /* Espaciado inferior */
+}
+
+/* Media Query para tarjetas en dispositivos móviles */
+@media (max-width: 768px) {
+  .card {
+    width: calc(50% - 1rem); /* Dos tarjetas por fila en pantallas medianas */
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    width: 100%; /* Una tarjeta por fila en pantallas pequeñas */
+  }
+}

@@ -1,0 +1,10 @@
+.BotonCarrito a{
+      text-decoration: none;
+}
+
+.BotonCarrito span{
+      font-size: large;
+      color: rgb(0, 0, 0);
+      font-weight: bold;
+
+}

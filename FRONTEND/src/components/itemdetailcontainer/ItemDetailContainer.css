@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+
+.detalleVino {
+  align-items: center;
+  text-align: center;
+  color: rgb(73, 73, 73);
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bold;
+  margin-top: 2rem; /* Ajuste para separación desde arriba */
+}
+
+.cargando {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20vh; /* Mejorar la posición verticalmente */
+  color: rgb(0, 0, 0);
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bold;
+}
+
+/* Media Queries para mejorar la legibilidad en pantallas más pequeñas */
+@media (max-width: 768px) {
+  .detalleVino {
+    font-size: 1.2rem; /* Reducir el tamaño de fuente en pantallas más pequeñas */
+  }
+
+  .cargando {
+    margin-top: 15vh; /* Ajuste adicional para pantallas más pequeñas */
+  }
+}
+
+@media (max-width: 480px) {
+  .detalleVino {
+    font-size: 1rem; /* Ajuste más significativo para pantallas muy pequeñas */
+  }
+
+  .cargando {
+    margin-top: 10vh; /* Ajuste adicional para pantallas muy pequeñas */
+  }
+}

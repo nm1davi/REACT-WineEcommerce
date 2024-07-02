@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.e043f6a7.css",
+    "main.js": "/static/js/main.3dceab11.js",
+    "static/media/Montaña.jpg": "/static/media/Montaña.ff63522436daac87e27d.jpg",
+    "static/media/bootstrap-icons.woff?": "/static/media/bootstrap-icons.4753c5ba57962b4d7bf8.woff",
+    "static/media/bootstrap-icons.woff2?": "/static/media/bootstrap-icons.6d63d0501e5ed7b79dab.woff2",
+    "index.html": "/index.html",
+    "main.e043f6a7.css.map": "/static/css/main.e043f6a7.css.map",
+    "main.3dceab11.js.map": "/static/js/main.3dceab11.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e043f6a7.css",
+    "static/js/main.3dceab11.js"
+  ]
+}

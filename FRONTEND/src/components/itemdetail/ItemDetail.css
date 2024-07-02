@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@1,300&display=swap');
+
+.cardPosicion {
+  display: flex;
+  justify-content: center;
+}
+
+.cardDescripcion {
+  font-size: 1rem;
+}
+
+.cardText {
+  text-align: start;
+  font-family: 'Source Sans 3', sans-serif;
+}
+
+.Stock {
+  background-color: rgba(53, 48, 48, 0.849) !important;
+  color: rgb(255, 255, 255) !important;
+  font-size: 1.5rem;
+}
+
+.ContenedorDetalle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .cardDescripcion {
+    font-size: 0.9rem;
+  }
+
+  .Stock {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .cardDescripcion {
+    font-size: 0.8rem;
+  }
+
+  .Stock {
+    font-size: 1.1rem;
+  }
+}

@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+
+/* Title */
+.TituloCarrito {
+  text-align: center;
+  align-items: center;
+  color: rgb(34, 33, 33);
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bold;
+  min-height: 60vh;
+  margin-bottom: 1rem;
+}
+
+/* Container */
+.ContainerCarrito {
+  min-height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  width: 50%;
+  border: 1px solid #000;
+  background: rgba(255, 255, 255, 0.377);
+  box-shadow: 0 15px 15px rgba(0, 0, 0, 0.3);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  font-family: 'Quicksand', sans-serif;
+}
+
+.ContainerCarrito table {
+  border-collapse: collapse; 
+  width: 90%;
+  margin: 1rem auto 0;
+}
+
+.ContainerCarrito th, .ContainerCarrito td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: left;
+}
+
+.ContainerCarrito button {
+  color: red;
+  border: none;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 15px 15px rgba(0, 0, 0, 0.3);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Empty Cart Button */
+.VaciarCarrito {
+  position: relative;
+  margin: 0 0 0.5rem;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 15px 15px rgba(0, 0, 0, 0.3);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  color: white;
+  font-weight: 400;
+  z-index: 1;
+  backdrop-filter: blur(15px);
+  transition: all 0.3s ease 0s;
+  outline: none;
+}
+
+.VaciarCarrito span:first-child, .FinalizarCompra span:first-child {
+  display: inline-block;
+  padding: 10px;
+}
+
+.VaciarCarrito span:last-child, .FinalizarCompra span:last-child {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateX(-100%);
+  transition: transform 0.2s ease-out;
+}
+
+.VaciarCarrito:hover span:first-child, .FinalizarCompra:hover span:first-child {
+  transform: translateX(200%);
+}
+
+.VaciarCarrito:hover span:last-child, .FinalizarCompra:hover span:last-child {
+  transform: none;
+}
+
+/* Finalize Purchase Button */
+.FinalizarCompra {
+  position: relative;
+  margin: 0 0 0.5rem;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 15px 15px rgba(0, 0, 0, 0.3);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  color: white;
+  font-weight: 400;
+  z-index: 1;
+  backdrop-filter: blur(15px);
+  transition: all 0.3s ease 0s;
+  outline: none;
+}
+
+/* Cart Buttons */
+.botonesCarrito {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem;
+}
+
+.botonesCarrito a {
+  font-size: 1.3rem;
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .ContainerCarrito {
+    width: 80%;
+  }
+
+  .botonesCarrito {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .botonesCarrito a {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .ContainerCarrito {
+    width: 95%;
+  }
+
+  .TituloCarrito {
+    font-size: 1.5rem;
+  }
+
+  .botonesCarrito a {
+    font-size: 0.8rem;
+  }
+}
