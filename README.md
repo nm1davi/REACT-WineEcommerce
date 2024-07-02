@@ -44,7 +44,7 @@ Para ejecutar este proyecto localmente, sigue estos pasos:
 
 1. Clona este repositorio.
    ```bash
-   git clone https://github.com/nm1davi/REACT-EcommerceVinos.git
+   git clone https://github.com/nm1davi/REACT-WineEcommerce.git
 2. Navega al directorio del proyecto.
    ```bash
     cd FRONTEND
